@@ -2,90 +2,89 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Meme Slider</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Meme Slider</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <div class="container">
-        <h1>CSS Meme Slider</h1>
-        <div class="slider">
-            <div class="slider-wrapper">
-                <input class="slider-open" type="radio" id="slider-1" name="slider" aria-hidden="true" hidden
-                    checked="checked">
-                <div class="slider-slide">
-                    <img src="./img/img-1.jpg">
-                    <p class="slider-slide__text">Slide meme 1</p>
-                </div>
-                <input class="slider-open" type="radio" id="slider-2" name="slider" aria-hidden="true" hidden>
-                <div class="slider-slide">
-                    <img src="./img/img-2.jpg">
-                    <p class="slider-slide__text">Slide meme 2</p>
-                </div>
-                <input class="slider-open" type="radio" id="slider-3" name="slider" aria-hidden="true" hidden>
-                <div class="slider-slide">
-                    <img src="./img/img-3.jpg">
-                    <p class="slider-slide__text">Slide meme 3</p>
-                </div>
-                <label for="slider-3" class="slider-control prev control-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd"
-                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </label>
-                <label for="slider-2" class="slider-control next control-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd"
-                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </label>
-                <label for="slider-1" class="slider-control prev control-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd"
-                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </label>
-                <label for="slider-3" class="slider-control next control-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd"
-                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </label>
-                <label for="slider-2" class="slider-control prev control-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd"
-                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </label>
-                <label for="slider-1" class="slider-control next control-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd"
-                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </label>
-                <ol class="slider-pagination">
-                    <li>
-                        <label for="slider-1" class="slider-bullet"></label>
-                    </li>
-                    <li>
-                        <label for="slider-2" class="slider-bullet"></label>
-                    </li>
-                    <li>
-                        <label for="slider-3" class="slider-bullet"></label>
-                    </li>
-                </ol>
-            </div>
+  <div class="container">
+    <h1>CSS Meme Slider</h1>
+    <div class="slider">
+      <div class="slider-wrapper">
+        <input class="slider-open" type="radio" id="slider-1" name="slider" aria-hidden="true" hidden checked>
+        <div class="slider-slide">
+          <img src="./img/img-1.jpg">
+          <p class="slider-slide__text">Slide meme 1</p>
         </div>
+        <input class="slider-open" type="radio" id="slider-2" name="slider" aria-hidden="true" hidden>
+        <div class="slider-slide">
+          <img src="./img/img-2.jpg">
+          <p class="slider-slide__text">Slide meme 2</p>
+        </div>
+        <input class="slider-open" type="radio" id="slider-3" name="slider" aria-hidden="true" hidden>
+        <div class="slider-slide">
+          <img src="./img/img-3.jpg">
+          <p class="slider-slide__text">Slide meme 3</p>
+        </div>
+        <label for="slider-3" class="slider-control prev control-1">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z"
+              clip-rule="evenodd" />
+          </svg>
+        </label>
+        <label for="slider-2" class="slider-control next control-1">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+              clip-rule="evenodd" />
+          </svg>
+        </label>
+        <label for="slider-1" class="slider-control prev control-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z"
+              clip-rule="evenodd" />
+          </svg>
+        </label>
+        <label for="slider-3" class="slider-control next control-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+              clip-rule="evenodd" />
+          </svg>
+        </label>
+        <label for="slider-2" class="slider-control prev control-3">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z"
+              clip-rule="evenodd" />
+          </svg>
+        </label>
+        <label for="slider-1" class="slider-control next control-3">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+              clip-rule="evenodd" />
+          </svg>
+        </label>
+        <ol class="slider-pagination">
+          <li>
+            <label for="slider-1" class="slider-bullet"></label>
+          </li>
+          <li>
+            <label for="slider-2" class="slider-bullet"></label>
+          </li>
+          <li>
+            <label for="slider-3" class="slider-bullet"></label>
+          </li>
+        </ol>
+      </div>
     </div>
+  </div>
 </body>
 
 </html>
