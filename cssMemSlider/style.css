@@ -168,7 +168,8 @@ h1 {
 
 #slider-1:checked ~ .control-1,
 #slider-2:checked ~ .control-2,
-#slider-3:checked ~ .control-3 {
+#slider-3:checked ~ .control-3,
+#slider-4:checked ~ .control-4 {
   display: block;
 }
 
@@ -241,6 +242,11 @@ h1 {
   ~ .control-3
   ~ .slider-pagination
   li:nth-child(3)
+  .slider-bullet::before,
+#slider-4:checked
+  ~ .control-4
+  ~ .slider-pagination
+  li:nth-child(4)
   .slider-bullet::before {
   /* background-color: #428bca; */
   opacity: 1;
@@ -283,6 +289,7 @@ h1 {
 
   .slider-slide img {
     max-height: 75%;
+    border-radius: 1.5rem;
   }
 
   .slider-control {
